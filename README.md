@@ -14,4 +14,13 @@ Also:
 * Wechseln mit "cd c:\xampp"
 * Script ausführen mit "php xampp.php"
 
-Wenn sich was an der Config geändert hat, eventuell noch Apache neu starten. 
+Wenn sich was an der Config geändert hat, eventuell noch Apache neu starten.
+
+# Verzeichnisstruktur
+
+- htdocs
+  - website1
+    - htdocs.ini
+  - websit2
+    - htdocs.ini
+  - ...
