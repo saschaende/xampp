@@ -1,12 +1,12 @@
 <?php
 
 // Path to htdocs
-define('PATH_HTDOCS', 'D:\xampp\htdocs');
+define('PATH_HTDOCS', 'C:\xampp\htdocs');
 
 // Path to the windows hosts file
 define('PATH_HOSTS', 'C:\Windows\System32\drivers\etc\hosts');
 
-define('PATH_VHOSTS', 'D:\xampp\apache\conf\extra\httpd-vhosts.conf');
+define('PATH_VHOSTS', 'C:\xampp\apache\conf\extra\httpd-vhosts.conf');
 
 // Newlines
 define('HOSTS_NEWLINE', "\r\n");
