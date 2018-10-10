@@ -21,6 +21,6 @@ Wenn sich was an der Config geändert hat, eventuell noch Apache neu starten.
 - C:\xampp\htdocs
   - \website1
     - htdocs.ini
-  - \websit2
+  - \website2
     - htdocs.ini
   - ...
