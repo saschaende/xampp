@@ -17,17 +17,7 @@ define('HOSTS_IP', '127.0.0.1');
 // Additional hosts entries to add
 $ADDITIONAL_HOSTS = [
     'test.localhost',
-    'geno.localhost',
-    'genomigrate.localhost',
-    'pxccontent.localhost',
-    'mobiel.localhost',
-    'ffn.localhost',
-    'haas.localhost',
-    'test.haas.localhost',
-    'concordia.localhost',
-    'taifun.localhost',
-    'smartfaktura.localhost',
-    'v8.localhost'
+    'owncloud.localhost',
 ];
 
 ##################################################################
