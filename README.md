@@ -18,9 +18,9 @@ Wenn sich was an der Config geändert hat, eventuell noch Apache neu starten.
 
 # Verzeichnisstruktur
 
-- htdocs
-  - website1
+- C:\xampp\htdocs
+  - \website1
     - htdocs.ini
-  - websit2
+  - \websit2
     - htdocs.ini
   - ...
