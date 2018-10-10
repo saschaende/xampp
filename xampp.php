@@ -1,12 +1,12 @@
 <?php
 
 // Path to htdocs
-define('PATH_HTDOCS', 'C:\xampp\htdocs');
+define('PATH_HTDOCS', 'D:\xampp\htdocs');
 
 // Path to the windows hosts file
 define('PATH_HOSTS', 'C:\Windows\System32\drivers\etc\hosts');
 
-define('PATH_VHOSTS', 'C:\xampp\apache\conf\extra\httpd-vhosts.conf');
+define('PATH_VHOSTS', 'D:\xampp\apache\conf\extra\httpd-vhosts.conf');
 
 // Newlines
 define('HOSTS_NEWLINE', "\r\n");
@@ -17,6 +17,17 @@ define('HOSTS_IP', '127.0.0.1');
 // Additional hosts entries to add
 $ADDITIONAL_HOSTS = [
     'test.localhost',
+    'geno.localhost',
+    'genomigrate.localhost',
+    'pxccontent.localhost',
+    'mobiel.localhost',
+    'ffn.localhost',
+    'haas.localhost',
+    'test.haas.localhost',
+    'concordia.localhost',
+    'taifun.localhost',
+    'smartfaktura.localhost',
+    'v8.localhost'
 ];
 
 ##################################################################
@@ -39,8 +50,14 @@ class XAMPP {
             $ini_path = PATH_HTDOCS . DIRECTORY_SEPARATOR . $dirname . DIRECTORY_SEPARATOR . 'htdocs.ini';
             if (file_exists($ini_path)) {
                 $dircfg = parse_ini_file($ini_path);
-                $dircfg['path'] = PATH_HTDOCS . DIRECTORY_SEPARATOR . $dirname;
-                $this->DOMAINS[] = $dircfg;
+
+                foreach($dircfg as $key=>$value){
+                    $this->DOMAINS[] = [
+                        'domain'    =>  $value,
+                        'path'  =>  PATH_HTDOCS . DIRECTORY_SEPARATOR . $dirname
+                    ];
+                }
+
             } else {
                 $this->DOMAINS[] = [
                     'domain' => $dirname,
